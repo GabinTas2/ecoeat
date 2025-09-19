@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header a{
+    color: white;
+}
+
+header{
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 60px;          /* Ajuste la hauteur du logo */
+    margin: 10px;          /* Espace autour du logo */
+}
+
+header nav ul {
+    display: flex;          /* Met les éléments en ligne */
+    gap: 20px;              /* Espace entre les éléments */
+    list-style: none;       /* Supprime les puces */
+    padding: 0;             /* Supprime le padding du ul */
+    margin: 0;              /* Supprime la marge du ul */
+}
+
+header nav ul li {
+    padding: 10px;          /* Garde un peu d’espace autour de chaque lien */
+}
+
+#about {
+    padding: 20px;
+    text-align: center;
+}
+
+#menu {
+    padding: 20px;
+}
+
+#menu h2 {
+    text-align: center;  /* ton titre centré en haut */
+    margin-bottom: 20px;
+}
+
+.menu-container {
+    display: flex;           /* aligne les articles en ligne */
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.menu-item {
+    display: flex;           /* contenu vertical */
+    flex-direction: column;
+    align-items: center;
+}
+
+#fonctionnement {
+
+    padding: 20px;
+    text-align: center;
+}
+
+#contact{
+    padding: 20px;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer{
+    background-color: green;
+    text-align: center;
+    padding: 10px;
+    color:white
+}
+footer a{
+    color: white;
+}
+
+/* ===== Responsive : écran ≤ 768px (tablettes & mobiles) ===== */
+@media (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;  /* les articles passent en colonne */
+        align-items: center;
+    }
+
+    .menu-item {
+        max-width: 90%;         /* prend presque toute la largeur */
+        margin-bottom: 20px;
+    }
+
+    header nav ul {
+        flex-direction: column; /* menu de navigation vertical */
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+/* ===== Responsive encore plus petit (smartphone ≤ 480px) ===== */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* logo et nav empilés */
+    }
+
+    header img.logo {
+        max-width: 150px;       /* logo réduit */
+        margin-bottom: 10px;
+    }
+
+    #about, #fonctionnement, #contact, footer {
+        padding: 10px;
+        text-align: center;     /* meilleur rendu mobile */
+    }
+}
+
