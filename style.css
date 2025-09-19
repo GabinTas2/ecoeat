@@ -9,11 +9,11 @@ a{
 }
 
 header a{
-    color: white;
+    color: black;
 }
 
 header{
-    background-color: green;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,10 +39,14 @@ header nav ul li {
 #about {
     padding: 20px;
     text-align: center;
+    background-color: green;
+    color: white;
 }
 
 #menu {
     padding: 20px;
+    background-color: green;
+    color: white;
 }
 
 #menu h2 {
@@ -66,11 +70,15 @@ header nav ul li {
 
     padding: 20px;
     text-align: center;
+    background-color: green;
+    color: white;
 }
 
 #contact{
     padding: 20px;
     text-align: center;
+    background-color: green;
+    color: white;
 }
 
 #contact form {
@@ -81,13 +89,13 @@ header nav ul li {
 }
 
 footer{
-    background-color: green;
+    background-color: white;
     text-align: center;
     padding: 10px;
-    color:white
+    color:black;
 }
 footer a{
-    color: white;
+    color: black;
 }
 
 /* ===== Responsive : écran ≤ 768px (tablettes & mobiles) ===== */
