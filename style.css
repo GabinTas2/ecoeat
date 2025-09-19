@@ -1,136 +1,137 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-header a{
-    color: black;
+header a {
+  color: black;
 }
 
-header{
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header img {
-    height: 60px;          /* Ajuste la hauteur du logo */
-    margin: 10px;          /* Espace autour du logo */
+  height: 60px; /* Ajuste la hauteur du logo */
+  margin: 10px; /* Espace autour du logo */
 }
 
 header nav ul {
-    display: flex;          /* Met les éléments en ligne */
-    gap: 20px;              /* Espace entre les éléments */
-    list-style: none;       /* Supprime les puces */
-    padding: 0;             /* Supprime le padding du ul */
-    margin: 0;              /* Supprime la marge du ul */
+  display: flex; /* Met les éléments en ligne */
+  gap: 20px; /* Espace entre les éléments */
+  list-style: none; /* Supprime les puces */
+  padding: 0; /* Supprime le padding du ul */
+  margin: 0; /* Supprime la marge du ul */
 }
 
 header nav ul li {
-    padding: 10px;          /* Garde un peu d’espace autour de chaque lien */
+  padding: 10px; /* Garde un peu d’espace autour de chaque lien */
 }
 
 #about {
-    padding: 20px;
-    text-align: center;
-    background-color: green;
-    color: white;
+  padding: 20px;
+  text-align: center;
+  background-color: green;
+  color: white;
 }
 
 #menu {
-    padding: 20px;
-    background-color: green;
-    color: white;
+  padding: 20px;
+  background-color: green;
+  color: white;
 }
 
 #menu h2 {
-    text-align: center;  /* ton titre centré en haut */
-    margin-bottom: 20px;
+  text-align: center; /* ton titre centré en haut */
+  margin-bottom: 20px;
 }
 
 .menu-container {
-    display: flex;           /* aligne les articles en ligne */
-    justify-content: space-around;
-    gap: 20px;
+  display: flex; /* aligne les articles en ligne */
+  justify-content: space-around;
+  gap: 20px;
 }
 
 .menu-item {
-    display: flex;           /* contenu vertical */
-    flex-direction: column;
-    align-items: center;
+  display: flex; /* contenu vertical */
+  flex-direction: column;
+  align-items: center;
 }
 
 #fonctionnement {
-
-    padding: 20px;
-    text-align: center;
-    background-color: green;
-    color: white;
+  padding: 20px;
+  text-align: center;
+  background-color: green;
+  color: white;
 }
 
-#contact{
-    padding: 20px;
-    text-align: center;
-    background-color: green;
-    color: white;
+#contact {
+  padding: 20px;
+  text-align: center;
+  background-color: green;
+  color: white;
 }
 
 #contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-footer{
-    background-color: white;
-    text-align: center;
-    padding: 10px;
-    color:black;
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  color: black;
 }
-footer a{
-    color: black;
+footer a {
+  color: black;
 }
 
 /* ===== Responsive : écran ≤ 768px (tablettes & mobiles) ===== */
 @media (max-width: 768px) {
-    .menu-container {
-        flex-direction: column;  /* les articles passent en colonne */
-        align-items: center;
-    }
+  .menu-container {
+    flex-direction: column; /* les articles passent en colonne */
+    align-items: center;
+  }
 
-    .menu-item {
-        max-width: 90%;         /* prend presque toute la largeur */
-        margin-bottom: 20px;
-    }
+  .menu-item {
+    max-width: 90%; /* prend presque toute la largeur */
+    margin-bottom: 20px;
+  }
 
-    header nav ul {
-        flex-direction: column; /* menu de navigation vertical */
-        gap: 10px;
-        align-items: center;
-    }
+  header nav ul {
+    flex-direction: column; /* menu de navigation vertical */
+    gap: 10px;
+    align-items: center;
+  }
 }
 
 /* ===== Responsive encore plus petit (smartphone ≤ 480px) ===== */
 @media (max-width: 480px) {
-    header {
-        flex-direction: column; /* logo et nav empilés */
-    }
+  header {
+    flex-direction: column; /* logo et nav empilés */
+  }
 
-    header img.logo {
-        max-width: 150px;       /* logo réduit */
-        margin-bottom: 10px;
-    }
+  header img.logo {
+    max-width: 150px; /* logo réduit */
+    margin-bottom: 10px;
+  }
 
-    #about, #fonctionnement, #contact, footer {
-        padding: 10px;
-        text-align: center;     /* meilleur rendu mobile */
-    }
+  #about,
+  #fonctionnement,
+  #contact,
+  footer {
+    padding: 10px;
+    text-align: center; /* meilleur rendu mobile */
+  }
 }
-
